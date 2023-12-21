@@ -4,9 +4,9 @@
     <tbody>
     {% for object in object_list %}
     <tr>
-        <td>{{ object.a_one|title }}</td>
         <td>{{ object.a_two }}</td>
         <td>{{ object.a_three }}</td>
+        <td>{{ object.a_one|title }}</td>
     </tr>
     {% endfor %}
     </tbody>
@@ -18,7 +18,7 @@
             <td><input type="object.a_one" name="a_one"></td>
             <td><input type="object.a_two" name="a_two"></td>
             <td><input type="object.a_three" name="a_three"></td>
-            <td><button class="btn btn-primary" type="submit">Добавить</button></td>
+            <td><input type="submit" value="Отправить"></td>
         </tr>
     </table>
 </form>
