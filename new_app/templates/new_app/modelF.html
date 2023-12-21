@@ -11,13 +11,13 @@
     {% endfor %}
     </tbody>
 </table>
-<form method="post" action="{% url 'new_app:index' %}">
+<form method="post" action="">
     {% csrf_token %}
     <table>
         <tr>
-            <td><input type="object.a_one" name="a_one"></td>
-            <td><input type="object.a_two" name="a_two"></td>
-            <td><input type="object.a_three" name="a_three"></td>
+            <td><input type="text" name="a_one"></td>
+            <td><input type="text" name="a_two"></td>
+            <td><input type="text" name="a_three"></td>
             <td><button class="btn btn-primary" type="submit">Добавить</button></td>
         </tr>
     </table>

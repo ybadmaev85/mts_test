@@ -1,3 +1,4 @@
+from django.http import HttpResponseServerError
 from django.shortcuts import render
 from django.urls import reverse_lazy
 from django.views.generic import CreateView
@@ -34,4 +35,4 @@ def my_view(request):
         a_one = request.POST.get('a_one')
         a_two = request.POST.get('a_two')
         a_three = request.POST.get('a_three')
-        return render(request, 'new_app/base.html')
+        return render(request, 'new_app/modelF.html')
