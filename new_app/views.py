@@ -35,4 +35,6 @@ def my_view(request):
         a_one = request.POST.get('a_one')
         a_two = request.POST.get('a_two')
         a_three = request.POST.get('a_three')
+        obj = ModelA.objects.create(a_one=a_one, a_two=a_two, a_three=a_three)
+        obj.save()
         return render(request, 'new_app/modelF.html')
